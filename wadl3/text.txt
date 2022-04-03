@@ -1,0 +1,5 @@
+tweet_text= Ahmed ate an apple 
+tweer_text= اكل احمد التفاحة
+forum_text= sara go to shopping
+post_text= الحليب غني بالكالوسيوم
+post_text= الحليب غني بالكالوسيوم

@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins',sans-serif;
+  
+  
+    
+  }
+
+
+
+  
+  /* القوائم*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(0, 13, 134);
+  }
+    
+    /* القوائم*/
+
+
+        /*LOGO*/
+#logo{
+    position: absolute;
+    top: -2%;
+    left:2%;
+    z-index:100;
+    
+  
+  }
+  /*LOGO*/
+
+  .AddTask{
+    font-weight: lighter;
+      text-align: center;
+  
+      font-size: 300%;
+      color: rgb(0, 0, 0);
+  
+  }
+
+  button{
+    margin-top: 30px;
+  
+  
+    width: 20%;
+    position: fixed;
+    left: 40%;
+    bottom:44px;
+    background-color: #000000c2;
+    color: #ffffff;
+    padding: 10px 8px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+
+  input[type=text], select {
+    margin: auto;
+    width: 20%;
+    align-items: center;
+    padding: 8px 10px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    
+  }
+
+  input[type=file] {
+    margin: auto;
+    width: 20%;
+    align-items: center;
+    padding: 8px 10px;
+
+    display: flex;
+    position: relative;
+  
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  input[type=date] {
+    margin: auto;
+    width: 20%;
+    align-items: center;
+    padding: 8px 10px;
+
+    display: flex;
+    position: relative;
+  
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  
+
+  
+  
+  
+ 
+
+  label{
+    margin: auto;
+    width: 40%;
+    align-items: center;
+  
+
+    display: flex;
+    position:relative; 
+    bottom: -26px;
+  
+
+    box-sizing: border-box;
+  }
