@@ -161,6 +161,7 @@
         <h2>Task2</h2>
 
         <?php
+        session_start();
 
         $lines = array();
         $fp = fopen('text.txt', 'r');
@@ -172,7 +173,7 @@
             $line = trim($line);
             $ex = explode("\n", $line);
             foreach ($ex as $e) {
-                $arrx =  stristr(htmlspecialchars($line), " ") . "<br>";
+                $arrx =  stristr(htmlspecialchars($line), " ") ;
             }
 
             //add to array
@@ -182,27 +183,30 @@
         ?>
         <?php $length = count($lines); ?>
         <?php for ($i = 0; $i < $length; $i++) {
-            echo " . "; ?>
+           $_SESSION['getPost']= $lines[$i]; 
+
+            ?>
             <ul>
                 <li>
-                    <a href="#"><?php print_r($lines[$i] . "<br>") . "<br>"; ?></a>
+                    <a href="#"><?php print_r(  $_SESSION['getPostt'] ) ; ?></a>
                     <ul>
 
-                        <form name="stdntdetails" action="pro.php" method="post">
-
-                            <?php $path = "tags.txt";
+                 <?php $path = "tags.txt";
                             $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-                            $nrl = count($lines);
-                            echo '<select name="department">';
+                            $nrl = count($lines);?>
+                                 <form  method="post" id="form1" name="form1" action="savesxml.php">
+                                                 <select  class="form-control" id="AnnTag" name="AnnTag">
+                            
 
+                                                 <li> <a href="#"><option value="choose"> </option>;
+                                                                     <?php for ($i = 0; $i < $nrl; $i++) {?> 
+                       
+                                                                         <option name= "select" value="<?php echo urlencode($lines[$i]) ?>" > <?php  echo $lines[$i] ?> </option>;
+                       
+                                                                         <?php  } ?>
+                       
+                                                                 </select>  </a></li>
 
-                            ?>
-
-                            <li> <a href="#"><?php echo   '<option value="choose"> </option>';
-                                                for ($i = 0; $i < $nrl; $i++) {
-                                                    echo   '<option name= "select" value="' . urlencode($lines[$i]) . '">' . $lines[$i] . '</option>';
-                                                }
-                                                echo '</select>'; ?> </a></li>
 
 
 
@@ -219,7 +223,6 @@
 
         <?php }
 
-        echo "<br>" . "<br>" . "<br>" . "<br>";
 
 
 

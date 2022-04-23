@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <doccument id="1">
+    <AnnotatorID id="2">29</AnnotatorID>
+    <TaskID id="2">41</TaskID>
+    <post id="2">
+      <sentence id="2">
+        <Token>
+          <Token id="1">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="2">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="3">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="4">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="5">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="6">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="7">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="8">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+          <Token id="9">
+            <word> Ahmed ate an apple<AnnotationTag>Typo</AnnotationTag></word>
+          </Token>
+        </Token>
+      </sentence>
+    </post>
+  </doccument>
+</root>

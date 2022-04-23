@@ -1,0 +1,8 @@
+Lion
+Cat
+Dog
+Tiger
+Cow
+Elephant
+Horse
+Other

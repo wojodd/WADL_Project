@@ -6,11 +6,15 @@ $DATABASE_NAME = 'xx';
 $conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
 if(isset($_POST['submit'])){
-    if(isset($_POST['department'])){
-      $department=$_POST['department'];
-      $querye = "INSERT INTO task (tagset) VALUES ('$department')";
+    if(isset($_POST['tagg'])){
+      $department=$_POST['tagg'];
+    
+      $querye = "INSERT INTO task (tagset) VALUES ('$department' )";
       $sql=mysqli_query($conn,$querye);
       mysqli_close($conn);                     
     }
   }
+
+ 
+
   ?>

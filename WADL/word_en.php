@@ -170,7 +170,7 @@
 
 
         <?php
-
+session_start();
 
         $contents = file_get_contents("text6.txt");
         $lines = explode("\n", $contents);
@@ -190,27 +190,31 @@
             while (!empty($keys)) {
                 $key = array_pop($keys);
 
+                $_SESSION["words"] = $words[$key];
+
 
             ?>
                 <ul>
-                    <li>
-                        <a href="#"><?php echo   $words[$key] . '<br />'; ?></a>
+                    <li > 
+                      
+                        <a href="#"  >  <?php echo  $_SESSION["words"]   .  '<br />'; ?>
+               </a>
                         <ul>
-                            <form name="stdntdetails" action="pro.php" method="post">
+                           
 
-                                <?php $path = "tags.txt";
+                                <?php  $path = "tags.txt";
                                 $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
                                 $nrl = count($lines);?>
                                 
-                                <select name="department";
-
-
-                                ?>
+                                <select  class="form-control" id="size" name="size">
 
                                 <li> <a href="#"><option value="choose"> </option>;
                                                     <?php for ($i = 0; $i < $nrl; $i++) {?> 
+      
                                                         <option name= "select" value="<?php echo urlencode($lines[$i]) ?>" > <?php  echo $lines[$i] ?> </option>;
-                                                   <?php  } ?>
+      
+                                                        <?php  } ?>
+      
                                                 </select>  </a></li>
 
 
@@ -230,13 +234,21 @@
 
 
 
+        
+        <?php }?>
+       
+     
+    
+   <?php  }; ?>
 
-        <?php }
-        };
+<div id="button1-2">
+<button class="first" type="submit" name="submit" value="save">Submit</button>
+<button class="first" type="submit" name="save" value="save">Save draft</button>
 
+</form>
+</div>
 
-
-        echo "<br>" . "<br>" . "<br>" . "<br>";
+      <?php  echo "<br>" . "<br>" . "<br>" . "<br>";
         ?>
 
         <!-- <input type="submit" id="loginbtn" name="submit"/> -->
@@ -249,11 +261,7 @@
     </div>
 
 
-    <div id="button1-2">
-        <button class="first" type="submit" name="submit" value="save">Submit</button>
-        <button class="first" type="submit" name="save" value="save">Save draft</button>
-        </form>
-    </div>
+    
 
 
 </body>

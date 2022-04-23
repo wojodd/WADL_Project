@@ -49,6 +49,13 @@
     }
 ?>
 
+<?php 
+session_start ();
+if(!isset($_SESSION["login"]))
+	header("location:login.php");
+  
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -100,7 +107,9 @@
 <!-- -------------------------------------------------------------------->
 
 
-<form method="POST" action="TaskProcess.php" >
+<form action="up.php"
+           method="post"
+           enctype="multipart/form-data">
 
 <h2 class="AddTask"> Add task </h2>
 
@@ -174,8 +183,10 @@
   
          
          <label>select dataset:</label> 
+         <input type="file" 
+                  name="my_image" id="avatar">
 
-  <input type="file" id="avatar" name="data" accept="">
+ 
 
 
 

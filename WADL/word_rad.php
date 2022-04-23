@@ -7,29 +7,10 @@
 
 
     <style>
-        #button1-2 {
-            margin: 0 auto;
-            width: 656px;
-            text-align: center;
-            position: absolute;
-            top: 70%;
-            left: 50%;
-        }
+  
 
 
-        .first {
-            margin-top: 10px;
-            width: 20%;
-            background-color: #333;
-            color: #ffffff;
-            padding: 12px 0;
-            font-size: 18px;
-            font-weight: 400;
-            border-radius: 5px;
-            cursor: pointer;
-
-
-        }
+      
 
 
 
@@ -197,30 +178,37 @@
                         <a href="#"><?php echo   $words[$key] . '<br />'; ?></a>
                         <ul>
                             <form name="stdntdetails" action="pro.php" method="post">
-                            <?php $tags = array();
-                                        $fp = fopen('tags.txt', 'r');
-                                        while (!feof($fp)) {
-                                            $line = fgets($fp);
+                                <?php $tags = array();
+                                $fp = fopen('tags.txt', 'r');
+                                while (!feof($fp)) {
+                                    $line = fgets($fp);
 
-                                            //process line however you like
-                                            $line = trim($line);
+                                    //process line however you like
+                                    $line = trim($line);
 
-                                            //add to array
-                                            $tags[] = $line;
-                                        }
+                                    //add to array
+                                    $tags[] = $line;
+                                }
 
-                                        $lengthx = count($tags);
+                                $lengthx = count($tags);
 
-                                        for ($x = 0; $x < $lengthx; $x++) {
-                                        
-                                        ?>
+                                for ($x = 0; $x < $lengthx; $x++) {
 
-                    <li> <a href="#"><?php  echo "<input type='radio' name='receptionts[]' value='".$tags[$x] ."' /> ".
-    $tags[$x]." <br />";} ?></a></li>
+                                ?>
+
+                                    <li> <a href="#"><?php echo "<input type='radio' name='receptionts[]' value='" . $tags[$x] . "' /> " .
+                                                            $tags[$x] . " <br />";
+                                                 
+                                                 
+                                                   } ?>  <div id="button1-2">
+                                                   <button class="first" type="submit" name="submit" value="save">Submit</button>
+                                                   <button class="first" type="submit" name="save" value="save">Save draft</button>
+                                                
+                                               </div></a></li>
 
 
 
-
+                                              </form>
 
 
 
@@ -254,11 +242,7 @@
     </div>
 
 
-    <div id="button1-2">
-        <button class="first" type="submit" name="submit" value="save">Submit</button>
-        <button class="first" type="submit" name="save" value="save">Save draft</button>
-        </form>
-    </div>
+    
 
 
 </body>

@@ -17,6 +17,8 @@ $_SESSION['gpass'] = $_POST['password'];
 $_SESSION['getName'] = $_POST['username'];
 $_SESSION['getPass'] = $_POST['password'];
 
+
+
 //SQL for Admin, Leader, Annotator
 $sql = mysqli_query($con,"select* from admin1 where UserName='$user'and password='$pass'");
 $result=mysqli_fetch_array($sql);

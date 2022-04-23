@@ -2,6 +2,52 @@
 <html lang="en">
 
 <head>
+    <style>
+        .taskAnno{
+            margin-top: 50px;
+            display: grid;
+            place-items: center;
+            font-size: 250%;}
+
+            input{
+                 
+                 background: #333;
+                 background-image: -webkit-linear-gradient(top, #333, #333);
+                 background-image: -moz-linear-gradient(top, #333, #333);
+                 background-image: -ms-linear-gradient(top, #333, #333);
+                 background-image: -o-linear-gradient(top, #333, #333);
+                 background-image: linear-gradient(to bottom, #333, #333);
+                 -webkit-border-radius: 11;
+                 -moz-border-radius: 11;
+                 border-radius: 11px;
+                 font-family: Arial;
+                 color: #ffffff;
+                 font-size: 18px;
+                 padding: 10px 20px 10px 20px;
+                 text-decoration: none;
+                 
+                 margin: auto;
+                 margin-bottom: 20px;
+                 width: 20%;
+                 display: grid;
+                 place-items: center;
+                 left: 40%;
+                 bottom:44px;
+               }
+               
+               input:hover {
+                 background: rgb(0, 13, 134);
+                 background-image: -webkit-linear-gradient(top, rgb(0, 13, 134), rgb(0, 13, 134));
+                 background-image: -moz-linear-gradient(top, rgb(0, 13, 134), rgb(0, 13, 134));
+                 background-image: -ms-linear-gradient(top, rgb(0, 13, 134), rgb(0, 13, 134));
+                 background-image: -o-linear-gradient(top, rgb(0, 13, 134), rgb(0, 13, 134));
+                 background-image: linear-gradient(to bottom, rgb(0, 13, 134), rgb(0, 13, 134));
+                 text-decoration: none;
+               }
+                  
+
+        
+        </style>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styleFile.css">
     <title>Files</title>
@@ -23,7 +69,7 @@ $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_
 
 
 
-<div class="TextLeader"> <h4> <?php echo $_SESSION["user"] ?> you have new tasks  </h4> </div>
+<div class="taskAnno"> <h4> <?php echo $_SESSION["user"] ?> you have new tasks  </h4> </div>
 <?php
 //ID annotator
 $comeN = $_SESSION['getName'];
@@ -54,13 +100,24 @@ $annotatoridd = $row['AnnotatorID'];
         $tag= $row1['Tagset'] ; 
         $data= $row1['dataset'] ;
         $name= $row1['name'] ;
-         echo $tag ." " . $data . "<br>";
+       ;
       ?>
         
 
-        <form method="POST" action="NewProces.php"> 
-          <input type="submit" name="NameTask" value=" <?php echo $name?> ">
+       
+           
+        
+      
+        <form method="POST" action="view.php"> 
+          
+          <input type="submit" name="NameTask" value=" <?php echo $name?>  " > 
         </form>
+            
+        </body>
+        </html>
+
+        
+        
         
      
 

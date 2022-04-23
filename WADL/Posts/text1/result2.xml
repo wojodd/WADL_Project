@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <doccument id="1">
+    <AnnotatorID id="2">63</AnnotatorID>
+    <TaskID id="2">177</TaskID>
+    <post id="2">
+      <sentence id="2">
+        <Token>
+          <Token id="1">
+            <word> The doctor is a person who looks after the</word>
+            <AnnotationTag>Adverb</AnnotationTag>
+          </Token>
+        </Token>
+      </sentence>
+    </post>
+    <img id="2"/>
+  </doccument>
+</root>
