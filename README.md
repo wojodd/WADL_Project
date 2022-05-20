@@ -1,1 +1,1 @@
-# Web Applecation For Data Labeling (WADL)
+# Web Application For Data Labeling (WADL)
