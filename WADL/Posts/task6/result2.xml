@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <doccument id="1">
-    <AnnotatorID id="2">41</AnnotatorID>
-    <TaskID id="2">200</TaskID>
-    <post id="2">
-      <sentence id="2">
-        <Token>
-          <Token id="1">
-            <AnnotationTag>Other</AnnotationTag>
-          </Token>
-        </Token>
-      </sentence>
-    </post>
-    <img id="2"/>
+    <AnnotatorID>41</AnnotatorID>
+    <TaskID>200</TaskID>
+    <Image id="1">
+      <AnnotationTag>Lion</AnnotationTag>
+    </Image>
   </doccument>
 </root>

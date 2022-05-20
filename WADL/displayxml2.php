@@ -76,37 +76,18 @@ $dom = new DOMDocument('1.0','UTF-8');
 
   $ann = $dom->createElement('AnnotatorID', "$annotatoridd");
   $result->appendChild($ann);
-  $ann->setAttribute('id', 2);
+
 
   $TaskID = $dom->createElement('TaskID', $taskidd);
   $result->appendChild($TaskID);
-  $TaskID->setAttribute('id', 2);
-
-  $post = $dom->createElement('post');
-  $result->appendChild($post);
-  $post->setAttribute('id', 2);
-
-  $sentence = $dom->createElement('sentence');
-  $post->appendChild($sentence);
-  $sentence->setAttribute('id', 2);
-
-#########################################
-  $img = $dom->createElement('img');
-  $result->appendChild($img);
-  $img->setAttribute('id', 2);
-########################################
-
-
-  $Token = $dom->createElement('Token');
-  $sentence->appendChild($Token);
 
 
 
  
   for ($i = 1; $i <= 1; $i++) {
 
-    $Token2 = $dom->createElement('Token');
-    $Token->appendChild($Token2);
+    $Token2 = $dom->createElement('Image');
+    $result->appendChild($Token2);
     $Token2->setAttribute('id', $i);
 
   

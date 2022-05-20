@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <doccument id="1">
+    <AnnotatorID>73</AnnotatorID>
+    <TaskID>206</TaskID>
+    <post id="1">
+      <post> اجعل من حياتك الجامعية فرصة للترقي
+       في مجالك الدراسي وفي شخصيتك وفكرك
+        والأهم أن تضع في حسبانك دراستك
+        أنت هنا لتدرس ولتحظى بحياة اجتماعية تؤهلك لمستقبل أفضل 
+        دون السماع للمحبطين والكسالى</post>
+      <AnnotationTag>MSA</AnnotationTag>
+    </post>
+  </doccument>
+</root>

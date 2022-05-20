@@ -31,11 +31,12 @@ if(!isset($_SESSION["login"]))
 <br>
 <div class="btn-group">
   <div class="position1">
-<button type="button" onclick="window.location.href='NewTask.php'">New Task</button>
-<button type="button" onclick="window.location.href='NewTask.php'">Task</button>
+<!-- <button type="button" onclick="window.location.href='NewTask.php'">New Task</button> -->
+<button type="button" onclick="window.location.href='NewTask.php'">NewTask</button>
+<button type="button" onclick="window.location.href='Draft.php'">Draft</button>
 <button type="button" onclick="window.location.href='Score.php'">Score</button>
-<button type="button" onclick="window.location.href='Draft.php'">The draft</button>
-<button type="button" onclick="window.location.href='displayTaskProcess.php'">d</button>
+<!-- 
+<button type="button" onclick="window.location.href='displayTaskProcess.php'">d</button> -->
 
 
   </div></div>
