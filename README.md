@@ -34,7 +34,7 @@
    ###  2. Assign task
    ###  3. Review the tasks
    ###  4. Monitor
-   ###  3. Inter-annotator agreement
+   ###  5. Inter-annotator agreement
 
 ![leader](https://user-images.githubusercontent.com/86664682/169665250-1bc77fab-a14a-40a1-bf74-adb1fb968969.png)
 * # Add new annotator
